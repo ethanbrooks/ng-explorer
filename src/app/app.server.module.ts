@@ -1,10 +1,10 @@
 import {NgModule} from '@angular/core';
 import {ServerModule, ServerTransferStateModule} from '@angular/platform-server';
 import {ModuleMapLoaderModule} from '@nguniversal/module-map-ngfactory-loader';
-import { DxListModule } from 'devextreme-angular';
+import { DxFileManagerModule } from 'devextreme-angular';
 
 import {AppModule} from './app.module';
-import {AppComponent} from './app.component';
+import {ExplorerComponent} from './explorer.component';
 
 @NgModule({
   imports: [
@@ -14,10 +14,10 @@ import {AppComponent} from './app.component';
     ServerModule,
     ModuleMapLoaderModule,
     ServerTransferStateModule,
-    DxListModule
+    DxFileManagerModule
   ],
   // Since the bootstrapped component is not inherited from your
   // imported AppModule, it needs to be repeated here.
-  bootstrap: [AppComponent],
+  bootstrap: [ExplorerComponent],
 })
 export class AppServerModule {}

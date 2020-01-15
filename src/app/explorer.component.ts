@@ -5,19 +5,20 @@ import RemoteFileProvider from 'devextreme/ui/file_manager/file_provider/remote'
 
 
 @Component({
-    styleUrls: ['./app.component.css'],
-    selector: 'app-demo',
-    templateUrl: './app.component.html',
+    styleUrls: ['./explorer.component.css'],
+    selector: 'app-explorer',
+    templateUrl: './explorer.component.html',
     preserveWhitespaces: true
 })
-export class AppComponent {
+export class ExplorerComponent {
     allowedFileExtensions: string[];
     remoteProvider: RemoteFileProvider;
 
     constructor() {
-        this.allowedFileExtensions = [".js", ".json", ".css"];
+        this.allowedFileExtensions = ['.js', '.json', '.css'];
         this.remoteProvider = new RemoteFileProvider({
-            endpointUrl: "https://js.devexpress.com/Demos/Mvc/api/file-manager-file-system-scripts"
+            endpointUrl: 'https://js.devexpress.com/Demos/Mvc/api/file-manager-file-system-scripts'
+            //           endpointUrl: 'https://node-git.localhost.neonzoom.com/list-tree'
         });
     }
 }
