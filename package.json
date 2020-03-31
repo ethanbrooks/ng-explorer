@@ -17,7 +17,7 @@
   ],
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --project ng-universal-demo",
     "build": "ng --project ng-universal-demo build",
     "lint": "ng lint ng-universal-demo",
     "build:client-and-server-bundles": "ng build --project ng-universal-demo --prod && ng run ng-universal-demo:server:production",
